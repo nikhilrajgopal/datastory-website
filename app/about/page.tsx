@@ -52,17 +52,17 @@ export default function About() {
 
       <main className="flex-1">
         {/* Hero Section - WHO WE ARE */}
-        <section className="relative h-[375px] md:h-[600px] overflow-hidden">
+        <section className="relative w-full aspect-[3/2] max-h-[650px] overflow-hidden">
           <Image
-            src="/images/about-hero-team.png"
-            alt="DataStory team"
+            src="/images/new-mems-sitting-sp26.jpg"
+            alt="DataStory Spring 2026 new members"
             fill
-            className="object-cover object-top"
+            className="object-cover object-[center_40%]"
             priority
           />
           <div className="absolute inset-0 bg-[#023020] opacity-30"></div>
-          <div className="absolute inset-0 flex items-start justify-center pt-16 z-10">
-            <h1 className="text-6xl md:text-8xl font-bold text-[#eee1c6] tracking-wider text-center px-4">
+          <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12 z-10">
+            <h1 className="text-6xl md:text-7xl font-bold text-center text-[#eee1c6] tracking-wider px-4">
               WHO WE ARE
             </h1>
           </div>

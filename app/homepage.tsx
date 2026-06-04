@@ -15,7 +15,7 @@ export default function Home() {
       title: "Projects",
       description:
         "We are committed to helping businesses and organizations harness the power of data to make informed decisions and achieve impactful results. We work with a variety of companies, ranging from startups to non-profits to well-established corporations.",
-      image: "/images/2026-projects-group-pic.jpg",
+      image: "/images/exec-railing-sp26.jpg",
       icon: <BarChart3 className="h-8 w-8" />,
       buttonText: "View Projects",
       buttonLink: "/projects",
@@ -33,7 +33,7 @@ export default function Home() {
       title: "Professional Development",
       description:
         "We strive to provide our members with real-world experience through consulting projects, workshops, and mentorship that prepare them for careers in data science. We also offer a Junior Consultant Program to support members early in their data science journey through structured training and project-based learning.",
-      image: "/images/professional-development-team.png",
+      image: "/images/chat-sp26.jpg",
       icon: <Building2 className="h-8 w-8" />,
       buttonText: "Learn More",
       buttonLink: "/development",
@@ -102,27 +102,27 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[300px] md:h-[500px] overflow-hidden">
           <Image
-            src="/images/club-pic-2025.jpg"
-            alt="DataStory team photo"
+            src="/images/spring-26-fullclub.jpg"
+            alt="DataStory Spring 2026 full club photo"
             fill
             className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-[#023020] opacity-30"></div>
-          <div className="absolute inset-0 flex flex-col items-center justify-start pt-4 md:pt-2 z-10">
+          <div className="absolute inset-0 flex flex-col items-center justify-start pt-2 md:pt-1 z-10">
             <div className="text-center px-4">
               <Image
                 src="/images/datastory-logo.png"
                 alt="DataStory Logo"
                 width={400}
                 height={140}
-                className="h-12 md:h-28 w-auto mx-auto mb-2 md:mb-3 drop-shadow-2xl"
+                className="h-12 md:h-28 w-auto mx-auto mb-1 md:mb-2 drop-shadow-2xl"
                 style={{
                   filter:
                     "brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(346%) hue-rotate(15deg) brightness(96%) contrast(92%) drop-shadow(0 4px 8px rgba(0,0,0,0.3))",
                 }}
               />
-              <div className="space-y-0 -mt-1">
+              <div className="space-y-0 -mt-2 md:-mt-3">
                 <p className="text-xs md:text-sm font-semibold text-[#eee1c6] tracking-widest uppercase drop-shadow-lg">
                   Building
                 </p>
@@ -189,9 +189,9 @@ export default function Home() {
 
               {/* Content Card */}
               <div className="max-w-4xl mx-auto">
-                <div className="bg-white text-black rounded-lg overflow-hidden">
-                  <div className="grid md:grid-cols-2">
-                    <div className="relative h-48 md:h-auto overflow-hidden">
+                <div className="bg-white text-black rounded-lg overflow-hidden h-[500px] md:h-[360px]">
+                  <div className="grid md:grid-cols-2 h-full">
+                    <div className="relative h-48 md:h-full w-full flex-shrink-0 overflow-hidden">
                       <Image
                         src={slides[currentSlide].image || "/placeholder.svg"}
                         alt={slides[currentSlide].title}
@@ -199,22 +199,26 @@ export default function Home() {
                         className="object-cover"
                       />
                     </div>
-                    <div className="p-6 md:p-8">
-                      <div className="flex items-center gap-3 mb-4">
+                    <div className="p-6 md:p-8 flex flex-col h-full min-h-0">
+                      <div className="flex items-center gap-3 flex-shrink-0">
                         <div className="text-[#023020]">{slides[currentSlide].icon}</div>
                         <h3 className="text-xl md:text-2xl font-bold text-[#023020]">{slides[currentSlide].title}</h3>
                       </div>
-                      <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
-                        {slides[currentSlide].description}
-                      </p>
-                      <Link href={slides[currentSlide].buttonLink}>
-                        <Button
-                          variant="outline"
-                          className="border-[#023020] text-[#023020] hover:bg-[#023020] hover:text-white bg-transparent w-full md:w-auto"
-                        >
-                          {slides[currentSlide].buttonText}
-                        </Button>
-                      </Link>
+                      <div className="flex-1 flex items-center py-4 min-h-0">
+                        <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+                          {slides[currentSlide].description}
+                        </p>
+                      </div>
+                      <div className="flex-shrink-0">
+                        <Link href={slides[currentSlide].buttonLink}>
+                          <Button
+                            variant="outline"
+                            className="border-[#023020] text-[#023020] hover:bg-[#023020] hover:text-white bg-transparent w-full md:w-auto"
+                          >
+                            {slides[currentSlide].buttonText}
+                          </Button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

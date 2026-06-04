@@ -160,15 +160,15 @@ export default function Development() {
         {/* Hero Section - HOW WE GROW */}
         <section className="relative h-[500px] md:h-[600px] overflow-hidden">
           <Image
-            src="/images/development-hero-large-team.jpeg"
-            alt="DataStory team in business attire - How We Grow"
+            src="/images/sp26-walking.jpg"
+            alt="DataStory Spring 2026 members walking - How We Grow"
             fill
             className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-[#023020] opacity-30"></div>
-          <div className="absolute inset-0 flex items-start justify-center pt-16 md:pt-20 z-10">
-            <h1 className="text-6xl md:text-8xl font-bold text-center text-[#eee1c6] tracking-wider">HOW WE GROW</h1>
+          <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12 z-10">
+            <h1 className="text-6xl md:text-7xl font-bold text-center text-[#eee1c6] tracking-wider">HOW WE GROW</h1>
           </div>
         </section>
 
@@ -216,7 +216,7 @@ export default function Development() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#023020] text-center md:text-left">Fall 2025 JCP Projects</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#023020] text-center md:text-left">Past JCP Projects</h3>
                 <div className="relative rounded-lg overflow-hidden">
                   {/* Navigation arrows */}
                   <button
