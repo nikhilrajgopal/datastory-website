@@ -324,7 +324,7 @@ export default function Team() {
               <div className="text-center group relative">
                 <div className="w-20 h-24 md:w-32 md:h-40 mx-auto mb-2 md:mb-4 overflow-hidden rounded-lg relative">
                   <Image
-                    src="/images/kira-pan-headshot-2.jpg"
+                    src="/images/kira-pan-headshot-2.JPG"
                     alt="Kira Pan"
                     width={400}
                     height={400}
@@ -786,7 +786,7 @@ export default function Team() {
                   <div className="text-center group relative">
                     <div className="w-20 h-24 md:w-32 md:h-40 mx-auto mb-2 md:mb-4 overflow-hidden rounded-lg relative">
                       <Image
-                        src="/images/kira-pan-headshot-2.jpg"
+                        src="/images/kira-pan-headshot-2.JPG"
                         alt="Kira Pan"
                         width={400}
                         height={400}
