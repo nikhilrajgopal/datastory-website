@@ -17,7 +17,7 @@ export async function submitContactForm(formData: FormData) {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        Authorization: `Bearer re_STaAGKd3_CJAWjGEN6jEQT9QHLsodvkfV`,
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
