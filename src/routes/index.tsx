@@ -9,13 +9,13 @@ const SITE = "https://www.datastoryberkeley.org";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DataStory at Berkeley — Data Science & Software Consulting" },
+      { title: "DataStory Berkeley | Technical Consulting at UC Berkeley" },
       {
         name: "description",
         content:
           "DataStory is a student-led data science and software consulting organization at UC Berkeley, building community through real client work.",
       },
-      { property: "og:title", content: "DataStory at Berkeley — Data Science & Software Consulting" },
+      { property: "og:title", content: "DataStory Berkeley | Technical Consulting at UC Berkeley" },
       {
         property: "og:description",
         content:
