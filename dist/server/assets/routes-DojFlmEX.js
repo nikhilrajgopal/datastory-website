@@ -1,0 +1,505 @@
+import { n as SiteFooter, r as Reveal, t as SiteHeader } from "./site-header-C2WRJh7j.js";
+import { Link } from "@tanstack/react-router";
+import { jsx, jsxs } from "react/jsx-runtime";
+//#region src/routes/index.tsx?tsr-split=component
+var MAJORS = [
+	"Applied Mathematics",
+	"Computational Biology",
+	"Computer Science",
+	"Cognitive Science",
+	"Data Science",
+	"Economics",
+	"Electrical Engineering and Computer Science",
+	"Engineering",
+	"Environmental Economics and Policy",
+	"Legal Studies",
+	"Mathematics",
+	"Molecular and Cell Biology",
+	"Philosophy",
+	"Political Economy",
+	"Political Science",
+	"Public Health",
+	"Statistics"
+];
+var PARTNERS = [
+	{
+		src: "/images/Oracle-Logo.png",
+		alt: "Oracle",
+		hash: "oracle"
+	},
+	{
+		src: "/images/unicef-logo-clean.png",
+		alt: "UNICEF",
+		hash: "unicef"
+	},
+	{
+		src: "/images/Aflac-logo.png",
+		alt: "Aflac",
+		hash: "aflac"
+	},
+	{
+		src: "/images/ea-logo.png",
+		alt: "EA",
+		hash: "ea-games"
+	},
+	{
+		src: "/images/seagate-logo.png",
+		alt: "Seagate",
+		hash: "seagate"
+	},
+	{
+		src: "/images/epri-logo.png",
+		alt: "EPRI",
+		hash: "epri"
+	},
+	{
+		src: "/images/education-trust-logo-updated.png",
+		alt: "The Education Trust",
+		hash: "the-education-trust"
+	},
+	{
+		src: "/images/farmlink-project-logo.png",
+		alt: "The Farmlink Project",
+		hash: "the-farmlink-project"
+	},
+	{
+		src: "/images/good360-logo.png",
+		alt: "Good360",
+		hash: "good360"
+	},
+	{
+		src: "/images/selector-logo.png",
+		alt: "Selector",
+		hash: "selector"
+	}
+];
+var ALUMNI = [
+	{
+		name: "Ryan Chan",
+		year: "Spring 2025",
+		position: "Software Engineer at Meta",
+		image: "/images/Ryan-chan-headshot.jpeg"
+	},
+	{
+		name: "Hailey Holcomb",
+		year: "Spring 2025",
+		position: "Software Engineer at Walmart",
+		image: "/images/hailey-holcomb-headshot.jpeg"
+	},
+	{
+		name: "Iman Hundal",
+		year: "Fall 2024",
+		position: "Data Analyst at Capital One",
+		image: "/images/iman-hundal-headshot.jpeg"
+	},
+	{
+		name: "Victor Shi",
+		year: "Spring 2025",
+		position: "Software Engineer at Meta",
+		image: "/images/victor-shi-headshot.png"
+	},
+	{
+		name: "Iris Chao",
+		year: "Spring 2025",
+		position: "Marketing Analyst at Adobe",
+		image: "/images/iris-chao-headshot.jpeg"
+	}
+];
+function MarqueeRow({ reverse = false, duration }) {
+	const items = [...MAJORS, ...MAJORS];
+	return /* @__PURE__ */ jsx("div", {
+		className: "overflow-hidden",
+		children: /* @__PURE__ */ jsx("div", {
+			className: `marquee-track ${reverse ? "marquee-track-reverse" : ""}`,
+			style: { animationDuration: duration },
+			children: items.map((major, i) => /* @__PURE__ */ jsxs("span", {
+				className: "flex shrink-0 items-center gap-4 whitespace-nowrap px-4 font-serif text-base text-cream/80 md:gap-8 md:px-8 md:text-2xl",
+				children: [major, /* @__PURE__ */ jsx("span", {
+					"aria-hidden": "true",
+					className: "text-cream/30",
+					children: "·"
+				})]
+			}, `${major}-${i}`))
+		})
+	});
+}
+function LogoStrip() {
+	const items = [...PARTNERS, ...PARTNERS];
+	return /* @__PURE__ */ jsx("div", {
+		className: "logo-marquee-mask overflow-hidden",
+		children: /* @__PURE__ */ jsx("div", {
+			className: "marquee-track items-center",
+			style: { animationDuration: "50s" },
+			children: items.map((partner, i) => /* @__PURE__ */ jsx(Link, {
+				to: "/projects",
+				hash: partner.hash,
+				"aria-label": `See our work with ${partner.alt}`,
+				className: "flex h-16 shrink-0 items-center px-10 md:px-14",
+				children: /* @__PURE__ */ jsx("img", {
+					src: partner.src,
+					alt: `${partner.alt} logo`,
+					className: "logo-marquee-link max-h-9 w-auto object-contain md:max-h-10",
+					loading: "lazy"
+				})
+			}, `${partner.alt}-${i}`))
+		})
+	});
+}
+function HomePage() {
+	return /* @__PURE__ */ jsxs("div", {
+		className: "flex min-h-screen flex-col bg-background",
+		children: [
+			/* @__PURE__ */ jsx(SiteHeader, { overlay: true }),
+			/* @__PURE__ */ jsxs("main", {
+				className: "flex-1",
+				children: [
+					/* @__PURE__ */ jsxs("section", {
+						className: "relative h-[76svh] max-h-[660px] min-h-[460px] w-full overflow-hidden sm:h-[88vh] sm:max-h-none sm:min-h-[560px]",
+						children: [
+							/* @__PURE__ */ jsx("img", {
+								src: "/images/spring-26-fullclub.jpg",
+								alt: "DataStory at Berkeley members gathered for the Spring 2026 full club photo",
+								className: "absolute inset-0 h-full w-full object-cover object-[50%_35%] sm:object-center"
+							}),
+							/* @__PURE__ */ jsx("div", {
+								"aria-hidden": "true",
+								className: "absolute inset-0 bg-forest/55"
+							}),
+							/* @__PURE__ */ jsx("div", {
+								"aria-hidden": "true",
+								className: "absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-forest/80 to-transparent"
+							}),
+							/* @__PURE__ */ jsxs("div", {
+								className: "shell relative flex h-full flex-col justify-between pb-7 pt-24 sm:justify-end sm:pb-16 sm:pt-32 md:pb-24",
+								children: [/* @__PURE__ */ jsxs("div", {
+									className: "mt-6 max-w-3xl sm:mt-0",
+									children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsx("p", {
+										className: "font-mono text-[0.6875rem] font-medium uppercase tracking-[0.14em] text-cream/80 sm:eyebrow",
+										children: "UC Berkeley · Data Science & Software Consulting"
+									}) }), /* @__PURE__ */ jsx(Reveal, {
+										delay: 120,
+										children: /* @__PURE__ */ jsxs("h1", {
+											className: "mt-3 font-display text-[1.875rem] font-normal leading-[1.0] tracking-tight text-cream sm:mt-6 sm:text-[2.25rem] md:text-[2.75rem] lg:text-[3.5rem] xl:text-[4.5rem]",
+											children: [
+												"Building Community",
+												/* @__PURE__ */ jsx("br", {}),
+												"Through Data Science"
+											]
+										})
+									})]
+								}), /* @__PURE__ */ jsx(Reveal, {
+									delay: 240,
+									children: /* @__PURE__ */ jsxs("div", {
+										className: "flex w-full flex-col gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:gap-4",
+										children: [/* @__PURE__ */ jsxs(Link, {
+											to: "/projects",
+											className: "group inline-flex w-full items-center justify-center gap-3 bg-cream px-4 py-2.5 text-[0.75rem] font-medium uppercase tracking-[0.12em] text-forest transition-colors duration-300 hover:bg-white sm:w-auto sm:justify-start sm:px-7 sm:py-3.5 sm:text-[0.8125rem] sm:tracking-[0.14em]",
+											children: ["Explore our work", /* @__PURE__ */ jsx("span", {
+												"aria-hidden": "true",
+												className: "transition-transform duration-300 group-hover:translate-x-1",
+												children: "→"
+											})]
+										}), /* @__PURE__ */ jsxs(Link, {
+											to: "/apply",
+											className: "group inline-flex w-full items-center justify-center gap-3 border border-cream/40 px-4 py-2.5 text-[0.75rem] font-medium uppercase tracking-[0.12em] text-cream transition-colors duration-300 hover:bg-cream hover:text-forest sm:w-auto sm:justify-start sm:px-7 sm:py-3.5 sm:text-[0.8125rem] sm:tracking-[0.14em]",
+											children: ["Join DataStory", /* @__PURE__ */ jsx("span", {
+												"aria-hidden": "true",
+												className: "transition-transform duration-300 group-hover:translate-x-1",
+												children: "→"
+											})]
+										})]
+									})
+								})]
+							})
+						]
+					}),
+					/* @__PURE__ */ jsx("section", {
+						className: "section-y",
+						children: /* @__PURE__ */ jsxs("div", {
+							className: "shell grid gap-10 md:grid-cols-12",
+							children: [/* @__PURE__ */ jsx("div", {
+								className: "md:col-span-4",
+								children: /* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsxs("p", {
+									className: "eyebrow flex items-center gap-3 text-forest/60",
+									children: [/* @__PURE__ */ jsx("span", {
+										"aria-hidden": "true",
+										className: "h-px w-8 bg-forest/30"
+									}), "Who we are"]
+								}) })
+							}), /* @__PURE__ */ jsxs("div", {
+								className: "md:col-span-8",
+								children: [
+									/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsx("h2", {
+										className: "display-lg text-forest",
+										children: "A community built around data."
+									}) }),
+									/* @__PURE__ */ jsx(Reveal, {
+										delay: 120,
+										children: /* @__PURE__ */ jsx("p", {
+											className: "lede mt-8 max-w-2xl",
+											children: "DataStory brings together Berkeley students from across disciplines to build real projects, learn from one another, and form a community beyond the classroom."
+										})
+									}),
+									/* @__PURE__ */ jsx(Reveal, {
+										delay: 200,
+										children: /* @__PURE__ */ jsx("div", {
+											className: "mt-10",
+											children: /* @__PURE__ */ jsx(Link, {
+												to: "/about",
+												className: "link-underline text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest",
+												children: "More about DataStory →"
+											})
+										})
+									})
+								]
+							})]
+						})
+					}),
+					/* @__PURE__ */ jsxs("section", {
+						className: "overflow-hidden bg-forest py-10 text-cream md:py-20",
+						children: [/* @__PURE__ */ jsx("div", {
+							className: "shell",
+							children: /* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsx("h2", {
+								className: "display-lg text-cream",
+								children: "18+ majors. One community."
+							}) })
+						}), /* @__PURE__ */ jsxs("div", {
+							className: "mt-6 space-y-2 md:mt-10 md:space-y-3",
+							children: [/* @__PURE__ */ jsx(MarqueeRow, { duration: "160s" }), /* @__PURE__ */ jsx(MarqueeRow, {
+								reverse: true,
+								duration: "200s"
+							})]
+						})]
+					}),
+					/* @__PURE__ */ jsxs("section", {
+						className: "section-y",
+						children: [
+							/* @__PURE__ */ jsx("div", {
+								className: "shell",
+								children: /* @__PURE__ */ jsxs("div", {
+									className: "flex flex-wrap items-end justify-between gap-6",
+									children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsxs("p", {
+										className: "eyebrow flex items-center gap-3 text-forest/60",
+										children: [/* @__PURE__ */ jsx("span", {
+											"aria-hidden": "true",
+											className: "h-px w-8 bg-forest/30"
+										}), "Selected clients & partners"]
+									}) }), /* @__PURE__ */ jsx(Reveal, {
+										delay: 80,
+										children: /* @__PURE__ */ jsx(Link, {
+											to: "/projects",
+											className: "link-underline text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest",
+											children: "Explore our work →"
+										})
+									})]
+								})
+							}),
+							/* @__PURE__ */ jsx("div", {
+								className: "shell mt-14 md:mt-16",
+								children: /* @__PURE__ */ jsxs("div", {
+									tabIndex: 0,
+									className: "group grid gap-10 border border-border p-7 md:grid-cols-12 md:p-10",
+									children: [/* @__PURE__ */ jsx(Reveal, {
+										className: "md:col-span-3",
+										children: /* @__PURE__ */ jsx("img", {
+											src: "/images/selector-logo.png",
+											alt: "Selector logo",
+											className: "logo-brand max-h-10 w-auto object-contain",
+											loading: "lazy"
+										})
+									}), /* @__PURE__ */ jsxs(Reveal, {
+										delay: 100,
+										className: "md:col-span-9",
+										children: [
+											/* @__PURE__ */ jsx("blockquote", {
+												className: "pull-quote text-forest",
+												children: "“Over a four-month engagement, they assembled a highly capable team of eight student engineers who operated with remarkable professionalism… Overall, we give Team DataStory a strong thumbs-up.”"
+											}),
+											/* @__PURE__ */ jsx("p", {
+												className: "eyebrow mt-8 text-forest/60",
+												children: "Selector — AI-Powered Network Intelligence Platform"
+											}),
+											/* @__PURE__ */ jsx(Link, {
+												to: "/projects",
+												className: "link-underline mt-8 inline-block text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest",
+												children: "Read the full testimonial →"
+											})
+										]
+									})]
+								})
+							}),
+							/* @__PURE__ */ jsx(Reveal, {
+								delay: 80,
+								children: /* @__PURE__ */ jsx("div", {
+									className: "mt-16 md:mt-20",
+									children: /* @__PURE__ */ jsx(LogoStrip, {})
+								})
+							})
+						]
+					}),
+					/* @__PURE__ */ jsx("section", {
+						className: "bg-cream-soft",
+						children: /* @__PURE__ */ jsxs("div", {
+							className: "shell py-20 md:py-28",
+							children: [/* @__PURE__ */ jsxs("div", {
+								className: "grid gap-6 md:grid-cols-12 md:items-end",
+								children: [/* @__PURE__ */ jsxs("div", {
+									className: "md:col-span-8",
+									children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsxs("p", {
+										className: "eyebrow flex items-center gap-3 text-forest/60",
+										children: [/* @__PURE__ */ jsx("span", {
+											"aria-hidden": "true",
+											className: "h-px w-8 bg-forest/30"
+										}), "Alumni"]
+									}) }), /* @__PURE__ */ jsx(Reveal, {
+										delay: 100,
+										children: /* @__PURE__ */ jsx("h2", {
+											className: "display-lg mt-6 text-forest",
+											children: "The community doesn’t end at Berkeley."
+										})
+									})]
+								}), /* @__PURE__ */ jsx("div", {
+									className: "md:col-span-4 md:text-right",
+									children: /* @__PURE__ */ jsx(Reveal, {
+										delay: 160,
+										children: /* @__PURE__ */ jsx(Link, {
+											to: "/development",
+											className: "link-underline text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest",
+											children: "Meet our alumni →"
+										})
+									})
+								})]
+							}), /* @__PURE__ */ jsx("div", {
+								className: "mt-16",
+								children: /* @__PURE__ */ jsx("div", {
+									className: "-mx-6 overflow-x-auto px-6 no-scrollbar snap-x snap-mandatory lg:mx-0 lg:overflow-visible lg:px-0 lg:snap-none",
+									children: /* @__PURE__ */ jsx("div", {
+										className: "flex w-max gap-3 sm:gap-6 lg:grid lg:w-auto lg:grid-cols-5 lg:gap-x-8 lg:gap-y-12",
+										children: ALUMNI.map((person, i) => /* @__PURE__ */ jsx(Reveal, {
+											delay: i * 60,
+											className: "w-[148px] shrink-0 snap-start sm:w-[180px] lg:w-auto",
+											children: /* @__PURE__ */ jsxs("div", {
+												className: "p-1",
+												children: [
+													/* @__PURE__ */ jsx("div", {
+														className: "img-zoom",
+														children: /* @__PURE__ */ jsx("img", {
+															src: person.image,
+															alt: person.name,
+															className: "aspect-[4/5] w-full object-cover object-top",
+															loading: "lazy"
+														})
+													}),
+													/* @__PURE__ */ jsx("h3", {
+														className: "mt-2 font-serif text-sm leading-tight text-forest sm:mt-5 sm:text-lg lg:text-2xl",
+														children: person.name
+													}),
+													/* @__PURE__ */ jsx("p", {
+														className: "eyebrow mt-1 text-forest/50 sm:mt-2",
+														children: person.year
+													}),
+													/* @__PURE__ */ jsx("p", {
+														className: "mt-1 text-xs leading-relaxed text-muted-foreground sm:mt-3 sm:text-sm",
+														children: person.position
+													})
+												]
+											})
+										}, person.name))
+									})
+								})
+							})]
+						})
+					}),
+					/* @__PURE__ */ jsxs("section", {
+						className: "section-y",
+						children: [
+							/* @__PURE__ */ jsxs("div", {
+								className: "shell",
+								children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsxs("p", {
+									className: "eyebrow flex items-center gap-3 text-forest/60",
+									children: [/* @__PURE__ */ jsx("span", {
+										"aria-hidden": "true",
+										className: "h-px w-8 bg-forest/30"
+									}), "Community"]
+								}) }), /* @__PURE__ */ jsx(Reveal, {
+									delay: 80,
+									children: /* @__PURE__ */ jsx("h2", {
+										className: "display-lg mt-6 max-w-4xl text-forest",
+										children: "More than the work."
+									})
+								})]
+							}),
+							/* @__PURE__ */ jsx(Reveal, {
+								delay: 140,
+								children: /* @__PURE__ */ jsx("div", {
+									className: "img-zoom mt-12 w-full",
+									children: /* @__PURE__ */ jsx("img", {
+										src: "/images/2026-community-pic.jpg",
+										alt: "DataStory members at a community event",
+										className: "aspect-[16/10] w-full object-cover object-center sm:aspect-auto sm:h-[52vh] sm:min-h-[320px] md:h-[64vh]",
+										loading: "lazy"
+									})
+								})
+							}),
+							/* @__PURE__ */ jsxs("div", {
+								className: "shell mt-12 grid gap-8 md:grid-cols-12 md:items-end",
+								children: [/* @__PURE__ */ jsx("div", {
+									className: "md:col-span-8",
+									children: /* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsx("p", {
+										className: "lede",
+										children: "Projects bring us together. The people make us stay."
+									}) })
+								}), /* @__PURE__ */ jsx("div", {
+									className: "md:col-span-4 md:text-right",
+									children: /* @__PURE__ */ jsx(Reveal, {
+										delay: 100,
+										children: /* @__PURE__ */ jsx(Link, {
+											to: "/team",
+											className: "link-underline text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest",
+											children: "Meet the team →"
+										})
+									})
+								})]
+							})
+						]
+					}),
+					/* @__PURE__ */ jsx("section", {
+						className: "bg-forest text-cream",
+						children: /* @__PURE__ */ jsxs("div", {
+							className: "shell py-20 md:py-28",
+							children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsx("h2", {
+								className: "display-xl max-w-4xl text-cream",
+								children: "Build with us."
+							}) }), /* @__PURE__ */ jsxs("div", {
+								className: "mt-12 flex flex-wrap items-center gap-4 border-t border-cream/20 pt-12",
+								children: [/* @__PURE__ */ jsx(Reveal, { children: /* @__PURE__ */ jsxs(Link, {
+									to: "/apply",
+									className: "group inline-flex items-center gap-3 bg-cream px-7 py-3.5 text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-forest transition-colors duration-300 hover:bg-white",
+									children: ["Join DataStory", /* @__PURE__ */ jsx("span", {
+										"aria-hidden": "true",
+										className: "transition-transform duration-300 group-hover:translate-x-1",
+										children: "→"
+									})]
+								}) }), /* @__PURE__ */ jsx(Reveal, {
+									delay: 100,
+									children: /* @__PURE__ */ jsxs(Link, {
+										to: "/contact",
+										className: "group inline-flex items-center gap-3 border border-cream/40 px-7 py-3.5 text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-cream transition-colors duration-300 hover:bg-cream hover:text-forest",
+										children: ["Work with DataStory", /* @__PURE__ */ jsx("span", {
+											"aria-hidden": "true",
+											className: "transition-transform duration-300 group-hover:translate-x-1",
+											children: "→"
+										})]
+									})
+								})]
+							})]
+						})
+					})
+				]
+			}),
+			/* @__PURE__ */ jsx(SiteFooter, {})
+		]
+	});
+}
+//#endregion
+export { HomePage as component };
