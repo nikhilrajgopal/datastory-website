@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const SITE = "https://data-story-unified.lovable.app";
+const SITE = "https://www.datastoryberkeley.org";
 
 export const Route = createFileRoute("/")({
   head: () => ({
