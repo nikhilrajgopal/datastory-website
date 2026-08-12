@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DataStory at Berkeley — Student Data Science Consulting" },
+      { title: "DataStory Berkeley | Data Science Consulting at UC Berkeley" },
       {
         name: "description",
         content:
-          "DataStory at Berkeley is a student consulting group delivering data science, machine learning, and software solutions for startups, non-profits, and corporations.",
+          "DataStory Berkeley is a UC Berkeley student organization providing data science, machine learning, and software consulting while developing the next generation of data scientists.",
       },
       { name: "author", content: "DataStory at Berkeley" },
       { property: "og:title", content: "DataStory at Berkeley" },
