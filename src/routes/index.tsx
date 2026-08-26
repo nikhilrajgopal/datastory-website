@@ -198,7 +198,7 @@ function HomePage() {
                 <h1 className="mt-3 font-display text-[1.875rem] font-normal leading-[1.0] tracking-tight text-cream sm:mt-6 sm:text-[2.25rem] md:text-[2.75rem] lg:text-[3.5rem] xl:text-[4.5rem]">
                   Building Community
                   <br />
-                  Through Data Science
+                  Through Tech
                 </h1>
               </Reveal>
             </div>

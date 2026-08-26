@@ -16,7 +16,7 @@ const TIMELINE = [
   },
   {
     date: "Friday, August 28",
-    title: "Joint Infosession (URM Focus)",
+    title: "Breaking into Tech: URM Panel",
     description: "An intro to DataStory centered on underrepresented-minority applicants.",
     highlighted: false,
     href: undefined,
@@ -24,23 +24,23 @@ const TIMELINE = [
   {
     date: "Monday, August 31",
     title: "Main Infosession",
-    description: "8–10 pm · Learn about the club, our projects, and the application process.",
+    description: "8–9:30 pm · Learn about the club, our projects, and the application process.",
     highlighted: false,
     href: undefined,
   },
   {
     date: "Wednesday, September 2",
     title: "Women's Night",
-    description: "7–9 pm · A community evening for women and non-binary applicants.",
+    description: "8–9 pm · A community evening for women and non-binary applicants.",
     highlighted: false,
     href: undefined,
   },
   {
     date: "Thursday, September 3",
     title: "Applications Close",
-    description: "3 pm deadline to submit. Click here to apply when the link is available.",
+    description: "3 pm deadline to submit. Click here to apply.",
     highlighted: true,
-    href: "https://forms.gle/kG7JohsYbtfapJct5",
+    href: "https://forms.gle/CNZiT6wKjaaQ2tTq7",
   },
 ];
 
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/apply")({
       { property: "og:title", content: "Apply — Join DataStory at Berkeley" },
       {
         property: "og:description",
-        content: "Fall 2026 applications open soon. Attend our infosessions and apply by September 3.",
+        content: "Fall 2026 applications are now live. Attend our infosessions and apply by September 3 at 3 pm.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE}/apply` },
@@ -83,7 +83,7 @@ function ApplyPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className="lede mt-8 max-w-2xl text-cream/75">
-                Applications for the Fall 2026 semester open soon. Attend an infosession, meet the team, and submit your
+                Applications for the Fall 2026 semester are now live. Attend an infosession, meet the team, and submit your
                 application by Thursday, September 3 at 3 pm.
               </p>
             </Reveal>
@@ -99,7 +99,7 @@ function ApplyPage() {
                   </span>
                 </a>
                 <a
-                  href="https://forms.gle/kG7JohsYbtfapJct5"
+                  href="https://forms.gle/CNZiT6wKjaaQ2tTq7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex w-full items-center justify-center gap-3 border border-cream/40 px-7 py-3.5 text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-cream transition-colors duration-300 hover:bg-cream hover:text-forest sm:w-auto"
@@ -265,7 +265,7 @@ function ApplyPage() {
               <Reveal delay={140}>
                 <p className="lede italic">Fall 2026 applications are open. Submit by Thursday, September 3 at 3 pm.</p>
                 <a
-                  href="https://forms.gle/kG7JohsYbtfapJct5"
+                  href="https://forms.gle/CNZiT6wKjaaQ2tTq7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group mt-10 inline-flex items-center gap-3 bg-forest px-7 py-3.5 text-[0.8125rem] font-medium uppercase tracking-[0.14em] text-cream transition-colors duration-300 hover:bg-forest-deep"
