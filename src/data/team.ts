@@ -18,7 +18,7 @@ export const executiveBoard: Member[] = [
   { name: "Julia Shvartsman", role: "VP of Professional Development", year: "Junior", major: "Data Science", image: "/images/julia-shvartsman-headshot.jpeg", linkedin: "https://www.linkedin.com/in/julia-shvartsman-4a89692ab/" },
   { name: "Hasset Mekuria", role: "Co-Dir. of Jr Consultants", year: "Junior", major: "Data Science, Political Science", image: "/images/hasset-mekuria-headshot.jpeg", linkedin: "https://www.linkedin.com/in/hasset-mekuria-2189b8271" },
   { name: "Himani Balaga", role: "Co-Dir. of Jr Consultants", year: "Junior", major: "Data Science", image: "/images/himani-balaga-headshot.png", linkedin: "https://www.linkedin.com/in/himani-balaga/" },
-  { name: "Kira Pan", role: "Dir. of Marketing", year: "Junior", major: "Cognitive Science", image: "/images/kira-pan-headshot-2.JPG", linkedin: "https://www.linkedin.com/in/kira-z-pan" },
+  { name: "Kira Pan", role: "Dir. of Marketing", year: "Junior", major: "Cognitive Science", image: "/images/kira-pan-headshot.JPG", linkedin: "https://www.linkedin.com/in/kira-z-pan" },
   { name: "Alexander Zhao", role: "Jr VP of Operations", year: "Sophomore", major: "Statistics, Data Science", image: "/images/alexander-zhao-headshot.jpg", linkedin: "http://www.linkedin.com/in/alexander-zhao1" },
   { name: "Rohan Dash", role: "Jr External VP", year: "Sophomore", major: "Data Science", image: "/images/rohan-dash-headshot.jpg", linkedin: "https://www.linkedin.com/in/rohan-dash-6b83312b1" },
   { name: "Jonathan Wagner", role: "Co-Jr Internal VP", year: "Sophomore", major: "Political Economy, Data Science", image: "/images/jonathan-wagner-headshot.jpg", linkedin: "https://www.linkedin.com/in/jonathan-a-wagner" },

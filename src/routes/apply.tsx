@@ -15,7 +15,7 @@ const TIMELINE = [
     href: undefined,
   },
   {
-    date: "Friday, August 28",
+    date: "Sunday, August 30",
     title: "Breaking into Tech: URM Panel",
     description: "An intro to DataStory centered on underrepresented-minority applicants.",
     highlighted: false,

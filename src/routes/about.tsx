@@ -153,7 +153,7 @@ function AboutPage() {
             </Reveal>
             <Reveal delay={160}>
               <img
-                src="/images/comprehensive-company-logos.png"
+                src="/images/updated-company-logos-2026.png"
                 alt="Companies where DataStory members work including Amazon, Microsoft, Apple, Intel, Tesla, Meta, McKinsey, BlackRock, BCG, Coca-Cola, Adobe, Disney, Red Bull, AT&T, Salesforce, Walmart, ThermoFisher Scientific, DataDog, Rakuten, Atlassian, Chime, PwC, Scale, Visa, CrowdStrike, Accenture, Workday, EY, Coinbase, and Jefferies"
                 className="mt-14 w-full object-contain"
                 loading="lazy"
