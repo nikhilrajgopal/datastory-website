@@ -17,7 +17,7 @@ const TIMELINE = [
   {
     date: "Sunday, August 30",
     title: "Breaking into Tech: URM Panel",
-    description: "An intro to DataStory centered on underrepresented-minority applicants.",
+    description: "8–10 pm · A joint infosession featuring an underrepresented minority panel from several tech organizations. This event is open to all.",
     highlighted: false,
     href: undefined,
   },
