@@ -39,7 +39,7 @@ export const consultants: Member[] = [
   { name: "Rayan Sudeora", role: "Consultant", year: "Senior", major: "Data Science, Cognitive Science", image: "/images/rayan-sudeora-headshot.png", linkedin: "https://www.linkedin.com/in/rayansudeora/" },
   { name: "Vrushtee Shah", role: "Consultant", year: "Junior", major: "Data Science, Legal Studies", image: "/images/vrushtee-shah-headshot.jpg", linkedin: "https://www.linkedin.com/in/vrushteeshah13/" },
   { name: "Hasset Mekuria", role: "Consultant", year: "Junior", major: "Data Science, Political Science", image: "/images/hasset-mekuria-headshot.jpeg", linkedin: "http://www.linkedin.com/in/hasset-mekuria-2189b8271" },
-  { name: "Kira Pan", role: "Consultant", year: "Junior", major: "Cognitive Science", image: "/images/kira-pan-headshot-2.JPG", linkedin: "https://www.linkedin.com/in/kira-z-pan" },
+  { name: "Kira Pan", role: "Consultant", year: "Junior", major: "Cognitive Science", image: "/images/kira-pan-headshot.JPG", linkedin: "https://www.linkedin.com/in/kira-z-pan" },
   { name: "Casey Colson", role: "Consultant", year: "Junior", major: "Statistics", image: "/images/casey-colson-headshot.JPEG", linkedin: "https://www.linkedin.com/in/caseycolson/" },
   { name: "Avyukth Harish", role: "Consultant", year: "Junior", major: "Data Science", image: "/images/avyukth-harish-headshot.jpg", linkedin: "http://linkedin.com/in/avy-harish" },
   { name: "Alexander Zhao", role: "Consultant", year: "Sophomore", major: "Statistics, Data Science", image: "/images/alexander-zhao-headshot.jpg", linkedin: "http://www.linkedin.com/in/alexander-zhao1" },

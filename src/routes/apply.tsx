@@ -10,7 +10,7 @@ const TIMELINE = [
   {
     date: "Wednesday, August 26",
     title: "Applications Open",
-    description: "The application for the Fall 2026 semester is now live.",
+    description: "The application for Fall 2026 opens.",
     highlighted: false,
     href: undefined,
   },
@@ -38,7 +38,7 @@ const TIMELINE = [
   {
     date: "Thursday, September 3",
     title: "Applications Close",
-    description: "3 pm deadline to submit. Click here to apply.",
+    description: "3 pm deadline to submit.",
     highlighted: true,
     href: "https://forms.gle/CNZiT6wKjaaQ2tTq7",
   },
@@ -51,12 +51,12 @@ export const Route = createFileRoute("/apply")({
       {
         name: "description",
         content:
-          "Applications for DataStory at Berkeley are open for Fall 2026. Join us for infosessions, Women's Night, and submit your application by September 3.",
+          "Applications for DataStory at Berkeley are now closed. Check back in January for more information about Spring 2027 recruitment.",
       },
       { property: "og:title", content: "Apply — Join DataStory at Berkeley" },
       {
         property: "og:description",
-        content: "Fall 2026 applications are now live. Attend our infosessions and apply by September 3 at 3 pm.",
+        content: "Fall 2026 applications are now closed.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE}/apply` },
@@ -83,8 +83,7 @@ function ApplyPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className="lede mt-8 max-w-2xl text-cream/75">
-                Applications for the Fall 2026 semester are now live. Attend an infosession, meet the team, and submit your
-                application by Thursday, September 3 at 3 pm.
+                Applications for the Fall 2026 semester are closed. Check back for Spring 2027 recruitment!
               </p>
             </Reveal>
             <Reveal delay={280}>
@@ -263,7 +262,7 @@ function ApplyPage() {
             </div>
             <div className="md:col-span-8">
               <Reveal delay={140}>
-                <p className="lede italic">Fall 2026 applications are open. Submit by Thursday, September 3 at 3 pm.</p>
+                <p className="lede italic">Fall 2026 applications are now closed.</p>
                 <a
                   href="https://forms.gle/CNZiT6wKjaaQ2tTq7"
                   target="_blank"
